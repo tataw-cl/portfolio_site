@@ -102,7 +102,7 @@ body {
 
 .icons {
   width: 20px;
-  height: 1cm;
+  height: 0.5cm;
 }
 
 .home-image img {
@@ -325,4 +325,24 @@ u {
   border-radius: 50%;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.my-pic-1 {
+  width: 50%;
+  height: 100%;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+  }
 }
