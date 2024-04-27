@@ -354,6 +354,44 @@ u {
   margin-left: 20px;
 }
 
+.container {
+  overflow: hidden;
+  width: 700px;
+}
+
+.container .text {
+  position: relative;
+  color: #56d448;
+  font-size: 3.1rem;
+  font-weight: 600;
+}
+
+#emn {
+  color: #fff;
+}
+
+.text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  border-left: 2px solid white;
+  animation: typing 4s steps(12) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   html {
     width: auto;
@@ -672,5 +710,38 @@ u {
     border-radius: 30px;
     width: 7cm;
     height: 30px;
+  }
+  .container {
+    overflow: hidden;
+    width: 350px;
+  }
+  .container .text {
+    position: relative;
+    color: #56d448;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  #emn {
+    color: #fff;
+  }
+  .text.sec-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-left: 2px solid white;
+    animation: typing 5s steps(12) infinite;
+  }
+  @keyframes typing {
+    40%,
+    60% {
+      left: calc(100% + 4px);
+    }
+    100% {
+      left: 0;
+    }
   }
 }

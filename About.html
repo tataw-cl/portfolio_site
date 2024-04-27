@@ -7,7 +7,7 @@
     <title>About Me page</title>
     <link rel="stylesheet" type="text/css" href="sheet.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
   </head>
 
   <body>
@@ -50,5 +50,31 @@
         >
       </div>
     </section>
+    <script>
+      window.onload = function () {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          reveals[i].classList.add("active");
+        }
+      };
+
+      const text = document.querySelector(".sec-text");
+      const textload = () => {
+        setTimeout(() => {
+          text.textContent = "Freelaner";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Blogger";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Youtuber";
+        }, 8000);
+        // setTimeout(() => {
+        //   text.textContent = "Programmer";
+        // }, 0);
+      };
+      textload();
+      setInterval(textload, 12000); //1s =1000ms
+    </script>
   </body>
 </html>

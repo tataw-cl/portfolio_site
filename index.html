@@ -7,15 +7,14 @@
     <title>Portfolio</title>
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="sheet.css" />
+    <!-- <link rel="stylesheet" href="style1.css" /> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="script.js"></script>
-    <script>
+    <!-- <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"rel="stylesheet" /> -->
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!-- <script>
       src = "https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js";
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -37,8 +36,12 @@
         <h3 class="hs">Hello and welcome to my site, it's TC</h3>
         <h1 class="hs">[TATAW CLARKSON]</h1>
         <h3 class="hs">
-          I'm a <span>Frontend Developer</span> and
-          <span>Computer programmer</span>
+          <div class="container hs">
+            <em class="text first-text" id="emn">I'm a</em>
+            <span class="text sec-text"></span>
+          </div>
+          <!-- I'm a<span>Frontend Developer</span> and
+          <span>Computer Programmer</span> -->
         </h3>
         <p>
           I'm passionate about programming, problem solving and innovative
@@ -85,5 +88,58 @@
     </section>
     <!--About me section-->
     <!--  -->
+    <script>
+      if (window.matchMedia("(max-width: 600px)").matches) {
+        window.onload = function () {
+          var reveals = document.querySelectorAll(".reveal");
+          for (var i = 0; i < reveals.length; i++) {
+            reveals[i].classList.add("active");
+          }
+        };
+
+        const text = document.querySelector(".sec-text");
+        const textload = () => {
+          setTimeout(() => {
+            text.textContent = "Web Developer";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "Application Programmer";
+          }, 5100);
+          setTimeout(() => {
+            text.textContent = "Systems Programmer";
+          }, 10000);
+          setTimeout(() => {
+            text.textContent = "Open source enthusiast";
+          }, 15000);
+        };
+        textload();
+        setInterval(textload, 20000); //1s =1000ms
+      } else {
+        window.onload = function () {
+          var reveals = document.querySelectorAll(".reveal");
+          for (var i = 0; i < reveals.length; i++) {
+            reveals[i].classList.add("active");
+          }
+        };
+
+        const text = document.querySelector(".sec-text");
+        const textload = () => {
+          setTimeout(() => {
+            text.textContent = "Web Developer";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "Application Programmer";
+          }, 4000);
+          setTimeout(() => {
+            text.textContent = "Systems Programmer";
+          }, 8000);
+          setTimeout(() => {
+            text.textContent = "Open source enthusiast";
+          }, 12000);
+        };
+        textload();
+        setInterval(textload, 12000); //1s =1000ms
+      }
+    </script>
   </body>
 </html>
