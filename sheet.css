@@ -248,6 +248,10 @@ span {
   background-color: rgb(241, 212, 212);
 }
 
+#not {
+  padding-top: 30px;
+}
+
 u {
   background-color: rgb(145, 146, 146);
 }
@@ -360,8 +364,6 @@ u {
     margin-top: -100px;
     padding-left: 0px;
     height: -webkit-fill-available;
-  }
-  #not {
   }
   .service-container1 {
     background-color: var(--second-bg-color);
