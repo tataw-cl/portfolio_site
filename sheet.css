@@ -174,7 +174,7 @@ span {
 }
 
 .about {
-  padding-top: 15rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,6 +198,7 @@ span {
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
+  margin-top: 100px;
 }
 
 .about-content h2 {
@@ -252,6 +253,10 @@ u {
 
 #Lp {
   font-size: 3.2rem;
+}
+
+#pid {
+  font-size: 3rem;
 }
 
 .services-container {
@@ -397,9 +402,6 @@ u {
   .home-content h3:nth-of-type(2) {
     margin-bottom: 1rem;
   }
-  #Lp {
-    font-size: 2rem;
-  }
   .home-image img {
     height: 100px;
     width: 100px;
@@ -417,7 +419,7 @@ u {
     margin-left: 20px;
   }
   span {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .btn {
     margin-top: 0px;
@@ -443,7 +445,7 @@ u {
     border: solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
-    margin: 2rem;
+    margin: 2.5rem;
     transition: 0.5s ease;
     box-shadow: 0 0 1rem rgb(35, 243, 184);
   }
@@ -464,7 +466,7 @@ u {
   .navbar a {
     font-size: 1.2rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 3rem;
     transition: 1s;
   }
   .about {
@@ -487,6 +489,7 @@ u {
     margin-left: 9px;
   }
   .heading {
+    margin-top: 15px;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -515,9 +518,17 @@ u {
     display: flex;
     height: 30px;
     padding-bottom: 1px;
+    margin-left: 3px;
+  }
+  .services-box img {
+    margin-left: 9px;
+  }
+  .services-box span {
+    font-size: 1rem;
   }
   .services h3 {
-    font-size: 1.2rem;
+    margin-left: 1px;
+    font-size: 1.3rem;
     font-weight: 400;
   }
   .services h2 {
@@ -525,43 +536,61 @@ u {
     font-weight: 500;
   }
   .services p {
+    margin-left: 4px;
     font-size: 0.8rem;
     line-height: 1;
     font-weight: 400;
   }
   .services {
+    width: 100%;
+    height: 100%;
     margin-top: 100px;
     padding-left: 100px;
     justify-content: center;
   }
   .services img {
-    height: 10px;
-    /* padding-bottom: 20px; */
+    height: 15px;
     background-color: rgb(241, 212, 212);
+    margin-top: 0px;
+    border-radius: 2px;
   }
   .webdev {
     display: flex;
+    margin-left: -1px;
   }
   .webdev img {
+    width: 12px;
     height: 15px;
     margin-top: 11px;
+    margin-left: 3px;
+    margin-right: 3px;
   }
   u {
     background-color: rgb(145, 146, 146);
   }
   #Lp {
-    font-size: 3.2rem;
+    font-size: 1.8rem;
+  }
+  #pid {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .card {
+    display: inline-block;
+    margin-left: -60px;
   }
   .services-container {
     margin-top: 20px;
-    width: 100%;
+    width: 340px;
     height: 500px;
     display: flex;
     justify-content: center;
     text-align: center;
     border-radius: 2rem;
     border: 0.2rem solid var(--bg-color);
-    margin-left: -40px;
+    margin-left: -30px;
+    margin-right: 0px;
+    padding-right: 10px;
   }
   .service-container1 {
     background-color: var(--second-bg-color);
@@ -572,18 +601,26 @@ u {
     margin-right: 10px;
     margin-bottom: 40px;
     padding-left: 10px;
-    height: 200px;
+    height: 220px;
+    width: 50%;
   }
   .services-container2 {
-    margin-bottom: 100px;
-    height: 600px;
-    margin-right: 10px;
-    padding-left: 30px;
+    height: 440px;
+    margin-right: -8px;
+    padding-left: 8px;
     background-color: var(--second-bg-color);
     text-align: center;
     border-radius: 3rem;
     border: 0.2rem solid var(--bg-color);
-    padding-bottom: 40px;
+    margin-left: -5px;
+  }
+  .circle-box {
+    border: 1px dotted;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-left: -2px;
+    margin-right: 7px;
+    padding-bottom: 5px;
   }
   #video {
     height: 15px;
