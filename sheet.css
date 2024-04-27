@@ -377,6 +377,7 @@ u {
   .hs {
     font-size: 2rem;
     margin-right: -100px;
+    margin-top: 24px;
   }
   p {
     font-size: 1rem;
@@ -446,7 +447,7 @@ u {
     border: solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
-    margin: 2.5rem;
+    margin: 1.3rem;
     transition: 0.5s ease;
     box-shadow: 0 0 1rem rgb(35, 243, 184);
   }
@@ -467,7 +468,7 @@ u {
   .navbar a {
     font-size: 1.2rem;
     color: var(--text-color);
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     transition: 1s;
   }
   .about {
