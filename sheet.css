@@ -406,7 +406,7 @@ u {
   }
 }
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 650px) {
   html {
     width: auto;
     height: 100%;
