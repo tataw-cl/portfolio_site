@@ -24,28 +24,53 @@
   <section class="contact">
     <h2 class="heading" id="not">Contact <span>Me</span></h2>
     <div class="contact_me reveal">
-      <input
-        id="email"
-        name="email "
-        type="email"
-        placeholder="Enter email here"
-      />
-      <br />
-      <input
-        id="num"
-        type="tel"
-        name="phone"
-        placeholder="Enter phone number here (e.g +1-000-222-897)"
-      />
-      <br />
-      <textarea
-        id="entry"
-        name="text"
-        id="comment"
-        cols="30"
-        rows="10"
-        placeholder="   Write me a message on why you'd wanna get to me..."
-      ></textarea>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact_me"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="3c52a284-6d0c-4715-a04f-9989f316cf02"
+        />
+        <input
+          class="input-fileds"
+          type="text"
+          name="Sender_name"
+          id="email"
+          placeholder="Enter your name here"
+          required
+        />
+        <!-- <br /> -->
+        <input
+          class="input-fileds"
+          id="email"
+          name="email "
+          type="email"
+          placeholder="Enter email here"
+          required
+        />
+        <!-- <br /> -->
+        <input
+          class="input-fileds"
+          id="num"
+          type="tel"
+          name="phone"
+          placeholder="Enter phone number here (e.g +1-000-222-897)"
+        />
+        <!-- <br /> -->
+        <textarea
+          class="input-fileds"
+          id="entry"
+          name="text"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="   Write me a message on why you'd wanna get to me..."
+        ></textarea>
+        <button type="submit" class="button">Submit</button>
+      </form>
     </div>
   </section>
   <script>

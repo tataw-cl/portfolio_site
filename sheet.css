@@ -301,14 +301,28 @@ u {
 }
 
 .contact_me {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact_me input,
 .contact_me textarea {
   text-align: center;
   letter-spacing: 0.5;
-  margin: 20px 20px;
+  margin: 10px 10px;
+}
+
+.button {
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+  background-color: #56d448;
+  color: #fff;
+  cursor: pointer;
 }
 
 #entry {
@@ -688,14 +702,17 @@ u {
     margin-top: 100px;
     height: 100%;
   }
-  .contact_me {
-    text-align: center;
-  }
   .contact_me input,
   .contact_me textarea {
     text-align: center;
     letter-spacing: 0.5;
     width: 40px;
+  }
+  .contact_me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   #entry {
     width: 310px;
